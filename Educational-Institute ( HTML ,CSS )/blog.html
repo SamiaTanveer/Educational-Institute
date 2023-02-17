@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!--  custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome  4 cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font awesome  6 cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&family=Source+Sans+Pro:ital,wght@1,200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <!-- <p>University</p> -->
+
+            <!-- -------- nav bar -------- -->
+
+            <div class="nav-links" id="navlinks">
+                <i class=" fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programs For 2022</h1>
+     </section>
+       <!-- ------ Blog page content ------ -->
+       <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/student.png" alt="">
+                <h2>Our Certificate & Online Programs For 2022</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti perferendis tenetur eum sequi, quo odit consequatur, animi vitae ea dicta aut deserunt necessitatibus omnis architecto. Tempore, quia iste quae consequuntur magni dolores amet accusantium sequi! Fugiat dolorum eaque optio sequi similique a nihil vel, incidunt, at, odio excepturi itaque quisquam! Commodi sint sequi ullam doloribus exercitationem laboriosam consequatur ipsam eveniet.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium error, ad optio ipsa veritatis repellendus eligendi ratione quos.amet consectetur adipisicing elit. Accusantium error, ad optio ipsa veritatis repellendus eligendi ratione quosamet consectetur adipisicing elit. Accusantium error, ad optio ipsa veritatis repellendus eligendi ratione quos Neque fuga debitis eius maxime, possimus reiciendis voluptates at totam atque provident iusto qui, voluptas labore? Magnam repellendus at consequatur. Totam, placeat.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quasi ex eum vitae voluptate in ea  amet consectetur adipisicing elit. Accusantium error, ad optio ipsa veritatis repellendus eligendi ratione quosalias debitis, odio eligendi mollitia accusamus, corporis optio est hic nisi exercitationem itaque placeat.amet consectetur adipisicing elit. Accusantium error, ad optio ipsa veritatis repellendus eligendi ratione quosamet consectetur adipisicing elit. Accusantium error, ad optio ipsa veritatis repellendus eligendi ratione quosamet consectetur adipisicing elit. Accusantium error, ad optio ipsa veritatis repellendus eligendi ratione quos Explicabo, voluptates! Voluptatem, quibusdam totam.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eius, qui repellendus recusandae accusamus sequi facilis non ducimus, amet consectetur adipisicing elit. Accusantium error, ad optio ipsa veritatis repellendus eligendi ratione quosvoluptatum tenetur pariatur veniam dolore inventore rerum corrupti eaque hic itaque voluptate.</p>
+
+
+
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="text" placeholder="Enter E-mail">
+                        <textarea  rows="5" placeholder="Write your comment."></textarea>
+                        <button class="hero-btn" id="explore-btn">Post Comment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Sciences</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>Food Sciences</span>
+                    <span>21</span>
+                </div>
+            </div>
+        </div>
+       </section>
+
+    
+       <!-- ----- Footer ----   -->
+     <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur recusandae placeat veniam ut suscipit odit.</p>
+        <div class="icons">
+            <h2>icons are not working</h2>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p>Made with  <i class="fa fa-heart-o"></i>  by Easy Tutorial</p>
+    </section>
+
+
+    <!--------- JavaScript for toggle menu ----------->
+    <script>
+       var navlinks = document.getElementById("navlinks");
+
+       function showMenu(){
+           navlinks.style.right = "0";
+       }
+       function hideMenu(){
+           navlinks.style.right = "-200px";
+       }
+    </script>
+</body>
+</html>
